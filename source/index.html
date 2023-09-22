@@ -1,60 +1,167 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Описание проекта">
-    <title>ProjectName</title>
-    <link rel="stylesheet" href="css/style.min.css">
-  </head>
-  <body>
-    <div class="wrapper">
-      <header>
-        <div class="container"></div>
-      </header>
-      <main>
-        <section class="intro">
-          <div class="container">
-            <h1>Тестовая страница.</h1>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="MMORPG, Mail.ru, игры онлайн, компьютерные игры, игровая вселенная, магия">
+  <link rel="preload" href="fonts/roboto-regular.woff2" as="font" crossorigin="anonymous" type="font/woff2">
+  <link rel="preload" href="fonts/roboto-bold-condensed.woff2" as="font" crossorigin="anonymous" type="font/woff2">
+  <title>Allody Online</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="container">
+        <div class="header__container">
+          <a href="https://allods.mail.ru/">
+            <picture>
+              <source type="image/webp" srcset="img/logo.webp 1x, img/logo@2x.webp 2x">
+              <img src="img/logo.png" srcset="img/logo@2x.png" width="376" height="348"
+                alt="логотип игры Аллоды Онлайн.">
+            </picture>
+          </a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <h1 class="visually-hidden">Добро пожаловать в онлайн MMORPG игру "Аллоды-онлайн"!</h1>
+      <section class="intro">
+        <div class="container">
+          <div class="intro__container">
+            <picture>
+              <source type="image/webp" srcset="img/boxes.webp 1x, img/boxes@2x.webp 2x">
+              <img src="img/boxes.png" srcset="img/boxes@2x.png" width="766" height="525"
+                alt="коллекционная коробка с игрой Аллоды Онлайн.">
+            </picture>
+            <h2>КОЛЛЕКЦИОННЫЕ ИЗДАНИЯ</h2>
+            <p>Побеждайте легко, побеждайте стильно с новыми коллекционными изданиями «Аллодов Онлайн»!</p>
           </div>
-        </section>
-      </main>
-      <footer>
-        <div class="container"></div>
-      </footer>
-    </div>
-
-    <!-- Модалки -->
-    <div class="modal modal--preload" data-modal="feedback">
-      <div class="modal__wrapper">
-        <div class="modal__overlay" data-close-modal></div>
-        <div class="modal__content">
-          <p class="modal__description">Обычная модалка</p>
-          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-            <svg width="15" height="15">
-              <use xlink:href="img/sprite.svg#icon-close"></use>
-            </svg>
-          </button>
         </div>
-      </div>
-    </div>
-
-    <div class="modal modal--preload modal--fit-content modal--no-scale" data-modal="success">
-      <div class="modal__wrapper">
-        <div class="modal__overlay" data-close-modal></div>
-        <div class="modal__content">
-          <p class="modal__description">Размер этой модалки зависит от ширины контента,<br> отключена анимация-скейл</p>
-          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-            <svg width="15" height="15">
-              <use xlink:href="img/sprite.svg#icon-close"></use>
-            </svg>
-          </button>
+      </section>
+      <section class="promo">
+        <div class="container">
+          <div class="promo__container">
+            <div class="promo__picture">
+              <picture>
+                <source type="image/webp" srcset="img/dog.webp 1x, img/dog@2x.webp 2x">
+                <img src="img/dog.png" srcset="img/dog@2x.png" width="441" height="891"
+                  alt="собака с усами, воротником и галстуком.">
+              </picture>
+            </div>
+            <div class="promo__description">
+              <h2>НАБОР «ПОСЫЛКА С КОНТРАБАНДОЙ»</h2>
+              <div class="promo__sort">
+                <span>Бесплатные сервера</span>
+                <span>Подписочный сервер</span>
+              </div>
+              <ul class="promo__options">
+                <li>
+                  <picture>
+                    <source type="image/webp" srcset="img/icons/watches.webp 1x, img/icons/watches@2x.webp 2x">
+                    <img src="img/icons/watches.png" srcset="img/icons/watches@2x.png" width="64" height="64"
+                      alt="песочные часы">
+                  </picture>
+                  <span class="promo__name">Игровое время</span>
+                  <div>
+                    <span class="promo__point">-</span>
+                    <span class="promo__point">30 дней</span>
+                  </div>
+                </li>
+                <li>
+                  <picture>
+                    <source type="image/webp" srcset="img/icons/toolbox.webp 1x, img/icons/toolbox@2x.webp 2x">
+                    <img src="img/icons/toolbox.png" srcset="img/icons/toolbox@2x.png" width="64" height="64"
+                      alt="коробка с набором инстурментов.">
+                  </picture>
+                  <span class="promo__name">Запечатанный набор инструментов</span>
+                  <div>
+                    <span class="promo__point">1</span>
+                    <span class="promo__point">1</span>
+                  </div>
+                </li>
+                <li>
+                  <picture>
+                    <source type="image/webp" srcset="img/icons/rune.webp 1x, img/icons/rune@2x.webp 2x">
+                    <img src="img/icons/rune.png" srcset="img/icons/rune@2x.png" width="64" height="64"
+                      alt="руна с символом.">
+                  </picture>
+                  <span class="promo__name">Хрупкая чистая руна 10-й ступени</span>
+                  <div>
+                    <span class="promo__point">1</span>
+                    <span class="promo__point">-</span>
+                  </div>
+                </li>
+                <li>
+                  <picture>
+                    <source type="image/webp" srcset="img/icons/symbol.webp 1x, img/icons/symbol@2x.webp 2x">
+                    <img src="img/icons/symbol.png" srcset="img/icons/symbol@2x.png" width="64" height="64"
+                      alt="огненный символ.">
+                  </picture>
+                  <span class="promo__name">Большой символ изобилия творца</span>
+                  <div>
+                    <span class="promo__point">10</span>
+                    <span class="promo__point">-</span>
+                  </div>
+                </li>
+                <li>
+                  <picture>
+                    <source type="image/webp" srcset="img/icons/battery.webp 1x, img/icons/battery@2x.webp 2x">
+                    <img src="img/icons/battery.png" srcset="img/icons/battery@2x.png" width="64" height="64"
+                      alt="батарейка с маной внутри.">
+                  </picture>
+                  <span class="promo__name">Мана-батарея</span>
+                  <div>
+                    <span class="promo__point">-</span>
+                    <span class="promo__point">20</span>
+                  </div>
+                </li>
+                <li>
+                  <picture>
+                    <source type="image/webp" srcset="img/icons/memory.webp 1x, img/icons/memory@2x.webp 2x">
+                    <img src="img/icons/memory.png" srcset="img/icons/memory@2x.png" width="64" height="64"
+                      alt="банка с шестеренкой внутри.">
+                  </picture>
+                  <span class="promo__name">Модуль памяти</span>
+                  <div>
+                    <span class="promo__point">-</span>
+                    <span class="promo__point">10</span>
+                  </div>
+                </li>
+                <li>
+                  <picture>
+                    <source type="image/webp" srcset="img/icons/dog-icon.webp 1x, img/icons/dog-icon@2x.webp 2x">
+                    <img src="img/icons/dog-icon.png" srcset="img/icons/dog-icon@2x.png" width="64" height="64"
+                      alt="иконка собаки с подкрученными усами.">
+                  </picture>
+                  <span class="promo__name">Помощник Вито</span>
+                  <div>
+                    <span class="promo__point">1</span>
+                    <span class="promo__point">1</span>
+                  </div>
+                </li>
+              </ul>
+              <div class="promo__offer">
+                <div class="promo__price">
+                  <span>399 ₽</span>
+                  <button type="button">ПРИОБРЕСТИ</button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container"></div>
+    </footer>
+  </div>
 
-    <script src="js/vendor.min.js"></script>
-    <script src="js/main.min.js"></script>
-  </body>
+  <script src="js/vendor.min.js"></script>
+  <script src="js/main.min.js"></script>
+</body>
+
 </html>
